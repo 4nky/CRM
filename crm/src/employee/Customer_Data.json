@@ -1,0 +1,242 @@
+[
+    {
+        "companyName": "Sharma Electronics",
+        "address": "12, MG Road, Bengaluru, Karnataka",
+        "contactPerson": {
+            "name": "Ramesh Sharma",
+            "title": "CEO",
+            "contactNumbers": "9876543210",
+            "email": "ramesh.sharma@sharmaelectronics.in",
+            "fax": "080-1234567",
+            "whatsapp": "9876543210"
+        },
+        "socialMedia": ["@sharmaelectronics", "facebook.com/sharmaelectronics"],
+        "dateContacted": "2024-11-01",
+        "salesCycle": {
+            "start": "2024-11-05",
+            "end": "2024-12-15"
+        },
+        "opportunity": {
+            "details": "Opportunity for a large order of electronic components",
+            "value": "₹1,500,000",
+            "endDate": "2024-12-20",
+            "chanceToWin": 4
+        }
+    },
+    {
+        "companyName": "Patel Industries",
+        "address": "45, Ashram Road, Ahmedabad, Gujarat",
+        "contactPerson": {
+            "name": "Meena Patel",
+            "title": "Director",
+            "contactNumbers": "9123456780",
+            "email": "meena.patel@patelindustries.in",
+            "fax": "079-8765432",
+            "whatsapp": "9123456780"
+        },
+        "socialMedia": ["@patelindustries", "linkedin.com/company/patelindustries"],
+        "dateContacted": "2024-11-02",
+        "salesCycle": {
+            "start": "2024-11-07",
+            "end": "2024-12-10"
+        },
+        "opportunity": {
+            "details": "New supply contract for industrial machinery",
+            "value": "₹2,000,000",
+            "endDate": "2024-12-12",
+            "chanceToWin": 5
+        }
+    },
+    {
+        "companyName": "Agarwal Traders",
+        "address": "23, GT Road, Kolkata, West Bengal",
+        "contactPerson": {
+            "name": "Anil Agarwal",
+            "title": "Managing Director",
+            "contactNumbers": "9830012345",
+            "email": "anil.agarwal@agarwaltraders.in",
+            "fax": "033-7654321",
+            "whatsapp": "9830012345"
+        },
+        "socialMedia": ["@agarwaltraders", "facebook.com/agarwaltraders"],
+        "dateContacted": "2024-11-05",
+        "salesCycle": {
+            "start": "2024-11-08",
+            "end": "2024-12-20"
+        },
+        "opportunity": {
+            "details": "Large retail supply for seasonal products",
+            "value": "₹750,000",
+            "endDate": "2024-12-25",
+            "chanceToWin": 3
+        }
+    },
+    {
+        "companyName": "Khan Enterprises",
+        "address": "56, Nampally, Hyderabad, Telangana",
+        "contactPerson": {
+            "name": "Imran Khan",
+            "title": "Owner",
+            "contactNumbers": "9001234567",
+            "email": "imran.khan@khanenterprises.com",
+            "fax": "040-2345678",
+            "whatsapp": "9001234567"
+        },
+        "socialMedia": ["@khanenterprises", "twitter.com/khanenterprises"],
+        "dateContacted": "2024-11-06",
+        "salesCycle": {
+            "start": "2024-11-10",
+            "end": "2024-12-18"
+        },
+        "opportunity": {
+            "details": "Potential for large volume purchase of industrial tools",
+            "value": "₹3,000,000",
+            "endDate": "2024-12-22",
+            "chanceToWin": 5
+        }
+    },
+    {
+        "companyName": "Verma Electricals",
+        "address": "12, Civil Lines, Kanpur, Uttar Pradesh",
+        "contactPerson": {
+            "name": "Pooja Verma",
+            "title": "Sales Head",
+            "contactNumbers": "9123456780",
+            "email": "pooja.verma@vermaelectricals.in",
+            "fax": "0512-2345678",
+            "whatsapp": "9123456780"
+        },
+        "socialMedia": ["@vermaelectricals", "linkedin.com/company/vermaelectricals"],
+        "dateContacted": "2024-11-07",
+        "salesCycle": {
+            "start": "2024-11-12",
+            "end": "2024-12-15"
+        },
+        "opportunity": {
+            "details": "Supply of electrical equipment for new projects",
+            "value": "₹1,200,000",
+            "endDate": "2024-12-20",
+            "chanceToWin": 4
+        }
+    },
+    {
+        "companyName": "Gupta Tech Solutions",
+        "address": "89, Shakti Nagar, Delhi",
+        "contactPerson": {
+            "name": "Sandeep Gupta",
+            "title": "Founder",
+            "contactNumbers": "9911223344",
+            "email": "sandeep.gupta@guptatechsolutions.com",
+            "fax": "011-1234567",
+            "whatsapp": "9911223344"
+        },
+        "socialMedia": ["@guptatech", "facebook.com/guptatechsolutions"],
+        "dateContacted": "2024-11-08",
+        "salesCycle": {
+            "start": "2024-11-12",
+            "end": "2024-12-25"
+        },
+        "opportunity": {
+            "details": "Tech consulting services for major clients",
+            "value": "₹900,000",
+            "endDate": "2024-12-30",
+            "chanceToWin": 3
+        }
+    },
+    {
+        "companyName": "Singh Manufacturing",
+        "address": "67, Industrial Area, Pune, Maharashtra",
+        "contactPerson": {
+            "name": "Raj Singh",
+            "title": "CEO",
+            "contactNumbers": "8765432109",
+            "email": "raj.singh@singhmanufacturing.com",
+            "fax": "020-9876543",
+            "whatsapp": "8765432109"
+        },
+        "socialMedia": ["@singhmanu", "linkedin.com/company/singhmanufacturing"],
+        "dateContacted": "2024-11-10",
+        "salesCycle": {
+            "start": "2024-11-15",
+            "end": "2024-12-18"
+        },
+        "opportunity": {
+            "details": "High-volume order of machinery components",
+            "value": "₹2,500,000",
+            "endDate": "2024-12-22",
+            "chanceToWin": 4
+        }
+    },
+    {
+        "companyName": "Reddy Enterprises",
+        "address": "34, Jubilee Hills, Hyderabad, Telangana",
+        "contactPerson": {
+            "name": "Anjali Reddy",
+            "title": "Sales Manager",
+            "contactNumbers": "9944556677",
+            "email": "anjali.reddy@reddyenterprises.in",
+            "fax": "040-2345678",
+            "whatsapp": "9944556677"
+        },
+        "socialMedia": ["@reddyenterprises", "facebook.com/reddyenterprises"],
+        "dateContacted": "2024-11-12",
+        "salesCycle": {
+            "start": "2024-11-15",
+            "end": "2024-12-25"
+        },
+        "opportunity": {
+            "details": "Partnership opportunity for new business venture",
+            "value": "₹1,800,000",
+            "endDate": "2024-12-30",
+            "chanceToWin": 4
+        }
+    },
+    {
+        "companyName": "Choudhary Constructions",
+        "address": "55, MG Road, Lucknow, Uttar Pradesh",
+        "contactPerson": {
+            "name": "Vikas Choudhary",
+            "title": "Managing Director",
+            "contactNumbers": "9876543210",
+            "email": "vikas.choudhary@choudharyconstructions.com",
+            "fax": "0522-2345678",
+            "whatsapp": "9876543210"
+        },
+        "socialMedia": ["@choudharyconstruct", "linkedin.com/company/choudharyconstructions"],
+        "dateContacted": "2024-11-13",
+        "salesCycle": {
+            "start": "2024-11-20",
+            "end": "2024-12-22"
+        },
+        "opportunity": {
+            "details": "Building supplies for upcoming construction projects",
+            "value": "₹1,500,000",
+            "endDate": "2024-12-28",
+            "chanceToWin": 4
+        }
+    },
+    {
+        "companyName": "Bajaj Finserv",
+        "address": "99, Bajaj Building, Mumbai, Maharashtra",
+        "contactPerson": {
+            "name": "Anil Bajaj",
+            "title": "General Manager",
+            "contactNumbers": "9823456789",
+            "email": "anil.bajaj@bajajfinserv.com",
+            "fax": "022-3456789",
+            "whatsapp": "9823456789"
+        },
+        "socialMedia": ["@bajajfinserv", "twitter.com/bajajfinserv"],
+        "dateContacted": "2024-11-15",
+        "salesCycle": {
+            "start": "2024-11-20",
+            "end": "2024-12-30"
+        },
+        "opportunity": {
+            "details": "Potential loan for new venture in financial services",
+            "value": "₹2,300,000",
+            "endDate": "2024-12-25",
+            "chanceToWin": 5
+        }
+    }
+]
