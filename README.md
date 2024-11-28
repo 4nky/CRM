@@ -1,30 +1,22 @@
 # CRM Project - README  
 
 ## Table of Contents  
-1. [Project Description]
-2. [Technologies Used] 
-3. [Key Features]
-4. [Installation and Setup]
-5. [Usage Instructions]  
-6. [Folder Structure] 
-7. [Future Enhancements]
-8. [License] 
+1. [Project Overview]
+2. [Features]
+3. [Technologies Used]
+4. [Database and Data Storage]
+5. [API Endpoints]
+6. [Project Structure] 
+7. [License] 
 
 ---
 
-## Project Description  
+## Project Overview
 This CRM web application is designed to manage customer relationships, track sales targets, generate quotations, and streamline the invoice generation process. The system includes two primary user roles: **Admin** and **Sales Executive**, each with distinct access levels and functionalities.  
 
 ---
 
-## Technologies Used  
-- **Frontend**: React, CSS  
-- **Backend**: Flask  
-- **Database**: MySQL  
-
----
-
-## Key Features  
+## Features  
 
 ### 1. User Management and Access Control  
 #### Admin User:  
@@ -57,79 +49,149 @@ This CRM web application is designed to manage customer relationships, track sal
 
 ---
 
-## Installation and Setup  
+## Technologies Used  
 
-### Prerequisites  
-- Node.js and npm  
-- Python (with Flask and MySQL packages installed)  
-- MySQL server  
+**Frontend-**
+React: For building the user interface.
+React Router DOM: For routing between pages.
+Material-UI: For UI components and styling.
+Axios: For making API calls to the backend.
+React Toastify: For notifications.
 
-### Steps to Setup  
-1. **Clone the Repository**:  
-   ```bash  
-   git clone https://github.com/your-repo/crm-project.git  
-   cd crm-project  
-   ```  
+**Backend-**
+Flask: A lightweight Python framework for API development.
+Flask-Cors: For handling cross-origin requests.
+Gunicorn: For deploying the Flask application.
+Requests: For HTTP requests.
+Python Dotenv: For environment variable management.
 
-2. **Frontend Setup**:  
-   ```bash  
-   cd frontend  
-   npm install  
-   npm start  
-   ```  
+### Libraries - 
 
-3. **Backend Setup**:  
-   ```bash  
-   cd backend  
-   python -m venv venv  
-   source venv/bin/activate  # For Linux/macOS  
-   venv\Scripts\activate  # For Windows  
-   pip install -r requirements.txt  
-   python app.py  
-   ```  
+**Frontend -**
+- React
 
-4. **Database Setup**:  
-   - Create a MySQL database and update the `config.py` file with your credentials.  
-   - Run migrations if applicable.  
+**Backend -**
+
+**1. Flask and Related Extensions:**
+- Flask: Core web framework for building the API.
+- Flask_SQLAlchemy: Integration of SQLAlchemy ORM with Flask.
+- Flask_CORS: Enables Cross-Origin Resource Sharing (CORS) for handling requests from different domains.
+- jsonify: Converts Python objects to JSON format for HTTP responses.
+- request: Handles incoming HTTP requests (e.g., parsing JSON payloads).
+
+**2. Database Management:**
+- SQLAlchemy: ORM for interacting with the database.
+- pymysql: MySQL driver used with SQLAlchemy to connect to MySQL databases.
+
+**3. Enumerations and Utility Functions (SQLAlchemy-specific):**
+- Enum: Defines enumerated data types for fields like currency and status.
+- db.func.current_timestamp: Provides the current timestamp in SQL queries.
+- These libraries together provide a robust framework for building, managing, and interacting with a RESTful API connected to a MySQL database.
+
+## Database and Data Storage-
+- Mysql and json
+- Customer data is stored in a JSON file named Customer_Data.json, Sales Executive data is stored in salesExecutive Table in crm_db, admin and sales executive is stored in crom_employee Table in crm_db and the quotation requests are stored in quotation table in crm_db database and are managed via API endpoints.
+
+### Table Schema - 
+
+**crm_employee-**
+
+- id	int	NO	PRI		auto_increment
+- username	varchar(100)	NO			
+- password	varchar(100)	NO	UNI		
+- role	varchar(15)	YES			
+
+**salesExecutive -**
+
+- id	int	NO	PRI		
+- email	varchar(255)	NO	UNI		
+- sales_target	decimal(10,2)	YES			
+- Total_Sales	decimal(10,2)	YES			
+- currency	enum('INR','USD','AED','Pound')	YES		INR	
+- target_assigned_date	timestamp	YES			
+- username	varchar(100)	YES			
+- status	enum('Active','Unactive')	YES		Active	
+
+**quotation -**
+
+- id	int	NO	PRI		auto_increment
+- service_name	varchar(255)	NO			
+- quantity	int	NO			
+- price	decimal(10,2)	NO			
+- gst	decimal(5,2)	NO			
+- tax	decimal(5,2)	NO			
+- total_amount	decimal(10,2)	NO			
+- Status	varchar(255)	NO			
+
+**Customer_Data.json example -**
+
+[{
+        "companyName": "Sharma Electronics",
+        "address": "12, MG Road, Bengaluru, Karnataka",
+        "contactPerson": {
+            "name": "Ramesh Sharma",
+            "title": "CEO",
+            "contactNumbers": "9876543210",
+            "email": "ramesh.sharma@sharmaelectronics.in",
+            "fax": "080-1234567",
+            "whatsapp": "9876543210"
+        },
+        "socialMedia": ["@sharmaelectronics", "facebook.com/sharmaelectronics"],
+        "dateContacted": "2024-11-01",
+        "salesCycle": {
+            "start": "2024-11-05",
+            "end": "2024-12-15"
+        },
+        "opportunity": {
+            "details": "Opportunity for a large order of electronic components",
+            "value": "₹1,500,000",
+            "endDate": "2024-12-20",
+            "chanceToWin": 4
+        }
+    }]
+ 
 
 ---
 
-## Usage Instructions  
-1. **Admin Role**:  
-   - Login through the admin portal.  
-   - Manage users, set sales targets, and approve/reject quotations.  
-   - View performance dashboards and generate reports.  
+## API endpoints
 
-2. **Sales Executive Role**:  
-   - Login through the sales portal.  
-   - Manage customer data and create quotations.  
-   - Submit quotations to the Admin for approval.  
+**User Management Endpoints-**
+- GET /get_customers/<username>: Retrieve user details by username.
 
----
+**Sales Executive Management Endpoints-**
+- GET /get_sales_executives: Retrieve all sales executive details.
+- DELETE /delete_sales_executive/<int:id>: Delete a sales executive by their ID.
+- PUT /edit_sales_executive/<int:id>: Update sales target and reset total sales to zero.
 
-## Folder Structure  
-```plaintext  
-crm-project/  
-├── frontend/  
-│   ├── src/  
-│   │   ├── components/  
-│   │   ├── pages/  
-│   │   └── App.js  
-├── backend/  
-│   ├── app.py  
-│   ├── models.py  
-│   └── routes/  
-├── database/  
-│   └── schema.sql  
-├── README.md  
-```  
+**Quotation Management Endpoints-**
+- GET /get_quotation_data: Retrieve all quotations.
+- POST /add_quotation: Add a new quotation with service and tax details.
+- PUT /update_quotation_status/<int:id>: Update the status of a specific quotation to Approved or Declined.
+
 
 ---
+## Project Structure
+- CRM Project/
+- ├── crm/
+- │   ├── public/
+- │   ├── node_modules/
+- │   └── src/
+- │       ├── employee/
+- │       │   ├── admin.css
+- │       │   ├── admin.jsx
+- │       │   ├── anksu-high-resolution-logo.png
+- │       │   ├── Customer_Data.json
+- │       │   ├── salesExecutive.css
+- │       │   └── salesExecutive.jsx
+- │       └── loginComponent/
+- │           ├── login.css
+- │           └── login.jsx
+- ├── crm-backend/
+- │   ├── backend-db.py
+- │   ├── my-venv/
+- │   └── __pycache__/
+- ├── README.md
 
-## Future Enhancements  
-- Add role-based analytics for Sales Executives.  
-- Integrate a notification system for approvals and updates.  
-- Implement multi-language support.  
 
 ---
 
