@@ -7,7 +7,8 @@
 4. [Database and Data Storage]
 5. [API Endpoints]
 6. [Project Structure] 
-7. [License] 
+7. [License]
+8. [Screenshots]
 
 ---
 
@@ -197,3 +198,21 @@ Python Dotenv: For environment variable management.
 
 ## License  
 This project is licensed under the MIT License.  
+
+---
+
+## Screenshots
+
+![Screenshot 2024-11-29 110814](https://github.com/user-attachments/assets/f15def87-60cf-4373-a430-b8ede94834de)
+![Screenshot 2024-11-29 110805](https://github.com/user-attachments/assets/a5853c6d-262d-41e1-8dbe-4dded3df6def)
+![Screenshot 2024-11-29 110749](https://github.com/user-attachments/assets/7d468718-1372-411b-a01c-033c11f4f9f0)
+![Screenshot 2024-11-29 110954](https://github.com/user-attachments/assets/fec76dac-0a3b-4169-8f83-15983f266f09)
+![Screenshot 2024-11-29 110945](https://github.com/user-attachments/assets/51614b1a-743e-4a68-8dba-bf73000cb41e)
+![Screenshot 2024-11-29 110934](https://github.com/user-attachments/assets/ef80c635-9555-4fe0-94b6-1b180128dfcf)
+![Screenshot 2024-11-29 110925](https://github.com/user-attachments/assets/9e86c499-0297-4ce5-ab27-7798d2dab38d)
+![Screenshot 2024-11-29 110909](https://github.com/user-attachments/assets/8339525e-45a5-4e0d-8ed7-9916b7567d97)
+![Screenshot 2024-11-29 110854](https://github.com/user-attachments/assets/e99fab73-116b-4e41-9b63-d06485239c85)
+![Screenshot 2024-11-29 110845](https://github.com/user-attachments/assets/401b808d-19c2-40eb-b751-899c94f99c7b)
+![Screenshot 2024-11-29 110836](https://github.com/user-attachments/assets/ae52a56d-59e5-4cf1-863a-2036b6a07863)
+![Screenshot 2024-11-29 110824](https://github.com/user-attachments/assets/435fb4ac-96df-438d-a578-3bfb63aab07a)
+
